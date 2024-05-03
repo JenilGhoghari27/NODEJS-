@@ -23,7 +23,7 @@ const transporter = nodemailer.createTransport({
 async function main(email) {
   // send mail with defined transport object
   const info = await transporter.sendMail({
-    from: 'jenilleptop27@gmail.com', // sender address
+    from: 'MailId', // sender address
     to: email, // list of receivers
     subject: "Hello ✔", // Subject line
     // text: "Hello world?", // plain text body
@@ -41,7 +41,7 @@ exports.protect = async function (req, res, next) {
     if (!token) {
       throw new Error("PLEASE ATTACH TOKEN")
     }
-    var decoded = jwt.verify(token, 'JENIL');
+    var decoded = jwt.verify(token, ''); //Create Secure Key  Using SPECIAL CHARACTER ex: A1b@c#123$*
     console.log(decoded);
     const checkUser = await User.findById(decoded.id)
     if (!checkUser) {
