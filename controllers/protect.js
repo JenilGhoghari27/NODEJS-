@@ -14,8 +14,8 @@ const transporter = nodemailer.createTransport({
   secure: true,
   auth: {
     // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-    user: "jenilleptop27@gmail.com",
-    pass: "omdpprymvjyrzofd",
+    user: "MAIL ID",
+    pass: "", //[GoogleAccount => AppPasswords => Enter your MailId Password => Create App Name => Generated App password => Copy and Paste in Code => Remove Spaces] ]
   },
 });
 
