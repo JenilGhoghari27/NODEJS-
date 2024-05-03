@@ -17,7 +17,7 @@ router.get('/', function (req, res, next) {
 });
 
 
-////// user ///////
+////// USER ///////
 
 router.post('/SIGNUP', upload.single('image'), UserController.SIGNUP); //RG
 
@@ -30,7 +30,7 @@ router.delete('/delete', UserController.delete); //DLT
 
 
 
-//////////// friend /////////////////
+//////////// FRIEND /////////////////
 router.post('/ADD', UserController.ADD);
 
 router.get('/ALL', jwtprotect.protect, UserController.ALL)
